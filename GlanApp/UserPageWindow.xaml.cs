@@ -75,7 +75,7 @@ namespace GlanApp
                     if (isSave == true)
                     {
                         MessageBox.Show("Файл сохранен");
-                    }
+                    } else
                     {
                         MessageBox.Show("Ошибка!");
                     }

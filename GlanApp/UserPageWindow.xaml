@@ -6,22 +6,32 @@
         xmlns:local="clr-namespace:GlanApp"
        mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="MainWindow" Height="600" Width="1000">
+        Title="MainWindow" Height="900" Width="1000">
     <Grid Background="#b366ff">
-        <Border MinWidth="400" Margin="13,0,-5,0" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20" Height="484">
+        <Border MinWidth="400" Margin="13,0,-5,0" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20" Height="710">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
             </Border.Effect>
             <StackPanel>
-                <TextBlock Text ="Кабинет пользователя" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
-                <Grid Margin="0 0 0 20">
-
-
-
+                <TextBlock Text ="Создание Договора" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
+                <Grid Margin="0 0 0 5">
                 </Grid>
-
-
-
+                <TextBox x:Name="textBoxNumberDogovor" materialDesign:HintAssist.Hint="Введите Номер Договора" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="IBeam" ></TextBox>
+                <TextBox x:Name="textBoxName" materialDesign:HintAssist.Hint="Введите Имя" Style="{StaticResource MaterialDesignFloatingHintTextBox}" ></TextBox>
+                <TextBox x:Name="textBoxLastName" materialDesign:HintAssist.Hint="Введите Фамилию" Style="{StaticResource MaterialDesignFloatingHintTextBox}" ></TextBox>
+                <TextBox x:Name="textBoxPatronymic" materialDesign:HintAssist.Hint="Введите Отчество" Style="{StaticResource MaterialDesignFloatingHintTextBox}" ></TextBox>
+                <TextBox x:Name="textBoxSeriesPassport" MaxLength="4" materialDesign:HintAssist.Hint="Введите Серию Паспорта" Style="{StaticResource MaterialDesignFloatingHintTextBox}" ></TextBox>
+                <TextBox x:Name="textBoxNumberPassport" MaxLength="6" materialDesign:HintAssist.Hint="Введите Номер Паспорта" Style="{StaticResource MaterialDesignFloatingHintTextBox}" ></TextBox>
+                <TextBox x:Name="textBoxLocationPassport" materialDesign:HintAssist.Hint="Введите Кем Выдан" Style="{StaticResource MaterialDesignFloatingHintTextBox}" ></TextBox>
+                <TextBox x:Name="textBoxCodePassport" materialDesign:HintAssist.Hint="Введите Код Подразделения" Style="{StaticResource MaterialDesignFloatingHintTextBox}" ></TextBox>
+                <DatePicker x:Name="textBoxDatePassport" SelectedDate="1999-01-01" materialDesign:HintAssist.Hint="Дата Выдачи" Style="{StaticResource MaterialDesignDatePicker}"></DatePicker>
+                <TextBox x:Name="textBoxAddressPassport"  materialDesign:HintAssist.Hint="Введите Адресс Регистрации" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="IBeam"></TextBox>
+                <TextBox x:Name="textBoxPostEmployee"  materialDesign:HintAssist.Hint="Введите Должность" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="IBeam"></TextBox>
+                <TextBox x:Name="textBoxPostDepartament"  materialDesign:HintAssist.Hint="Введите Кому Подчиняется" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="IBeam"></TextBox>
+                <DatePicker x:Name="textBoxDateDateStartWork" SelectedDate="1999-01-01" materialDesign:HintAssist.Hint="Дата Начала Работы" Style="{StaticResource MaterialDesignDatePicker}"></DatePicker>
+                <TextBox x:Name="textBoxSalary"  materialDesign:HintAssist.Hint="Введите Зарплату" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="IBeam"></TextBox>
+                <TextBox x:Name="textBoxMounthCount" MaxLength="2"  materialDesign:HintAssist.Hint="Испытательный срок в (месяцах)" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Cursor="IBeam"></TextBox>
+                <Button x:Name="btnCreateDocument" Content="Создать Договор" Margin="0 20" Cursor="Hand"></Button>
             </StackPanel>
         </Border>
     </Grid>
